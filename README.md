@@ -69,7 +69,11 @@ drive.mount('/content/drive')
 
 ![image](https://github.com/user-attachments/assets/e7cc83fd-90d3-47b3-a044-05c4a991103d)
 
-(這個部分麻煩你來做)~
+如何對項目上傳並執行
+
+![image](https://github.com/user-attachments/assets/8e900676-0abb-42d9-8539-168f32a7e3f3)
+
+
 
 ![image](https://github.com/user-attachments/assets/b1ff1a6b-d7e2-4224-88a5-b9c3aa09d29e)
 
