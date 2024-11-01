@@ -73,7 +73,9 @@ drive.mount('/content/drive')
 
 ![image](https://github.com/user-attachments/assets/8e900676-0abb-42d9-8539-168f32a7e3f3)
 
+修改筆記本設定啟用gpu
 
+![image](https://github.com/user-attachments/assets/9d99d76a-1f42-435c-a5ac-33ece8fefe67)
 
 ![image](https://github.com/user-attachments/assets/b1ff1a6b-d7e2-4224-88a5-b9c3aa09d29e)
 
