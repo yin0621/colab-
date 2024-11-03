@@ -101,7 +101,7 @@ drive.mount('/content/drive')
 
 我的文件就被刪除啦(上圖)
 
-接著進入講座照片的目錄下
+接著進入到已解縮的檔案的目錄下
 
 輸入代碼(呈現下圖):
 
@@ -129,7 +129,6 @@ drive.mount('/content/drive')
 
 注意!!中間不能有空格
 
-![image](https://github.com/user-attachments/assets/ebeaeedc-05fa-4a43-bcb5-298391db6734)
 
 
 
