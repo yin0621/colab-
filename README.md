@@ -133,25 +133,26 @@ drive.mount('/content/drive')
 
 ![image](https://github.com/user-attachments/assets/0af1a1a7-8f1e-46b3-b121-4aa44909936d)
 
-啟動矩陣推理訓練
+接著我們輸入:!python train.py --rect
+啟動矩陣推理訓練【顯示下圖】
 
 ![image](https://github.com/user-attachments/assets/7db23751-4aab-4e15-8d18-44bcf424d3f7)
 
-刷新tensorboard
+刷新tensorboard【代碼為 : %tensorboard --logdir=runs/train】
 
 ![image](https://github.com/user-attachments/assets/2d29518e-0cbe-4a4a-890f-ba3b8314c4e1)
 
 如果一開始tensorboard不顯示，是因為上傳的zip檔案裡面runs資料夾下train資料夾下沒有exp文件
 
-繼續在下面通過!python train.py --rect運行
+我們在通過【!python train.py --rect】運行
 
 ![image](https://github.com/user-attachments/assets/232a9fb0-3be0-4335-b202-633c97011db8)
 
-保存在exp8
+我們將此次訓練的內容保存在名為【exp8】的文件夾中【下圖】
 
 ![image](https://github.com/user-attachments/assets/0a6af76b-8d3c-4764-8b0f-36b0cfde1685)
 
-tensorboard裡顯示loss的變化
+tensorboard裡顯示loss的變化【下圖】
 
 ![image](https://github.com/user-attachments/assets/d524cb5b-cde8-4b28-b6af-244578660fdb)
 
@@ -163,8 +164,24 @@ tensorboard資料：runs/train/exp/events.out.tfevents.1678366117.03e634abd4f1.7
 
 訓練結果：results.csv
 
-更改訓練的資料集
+**更改訓練的資料集**
+
+運用程式碼:【!python train.py --data=data/coco.yaml】
 
 ![image](https://github.com/user-attachments/assets/c67db6e6-cc41-4c4c-b814-8c8cc3d5a847)
 
 把得到的best.pt下載下來在yolov5專案中，把detect.py 中main函數第一個參數weights對應的權重參數檔改成這個best.pt，就可以測試結果
+
+在Colab上運行YOLOv5模型的步驟如下：
+
+上傳YOLOv5模型的壓縮文件（yolov5-5.0.zip）到Colab。
+
+解壓縮文件：使用命令 !unzip /content/yolov5-5.0.zip。
+
+切換到解壓後的目錄：使用命令 %cd /content/yolov5-5.0。
+
+安裝依賴庫：執行 !pip install -r requirements.txt 來安裝所需的庫。
+
+啟動TensorBoard工具來可視化學習曲線，訓練的loss等結果會記錄在 runs/train 文件夾中。
+
+這些步驟可以幫助你順利進行YOLOv5的訓練和監控。
