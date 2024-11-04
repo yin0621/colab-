@@ -172,6 +172,8 @@ tensorboard資料：runs/train/exp/events.out.tfevents.1678366117.03e634abd4f1.7
 
 把得到的best.pt下載下來在yolov5專案中，把detect.py 中main函數第一個參數weights對應的權重參數檔改成這個best.pt，就可以測試結果
 
+**總結:**
+
 在Colab上運行YOLOv5模型的步驟如下：
 
 上傳YOLOv5模型的壓縮文件（yolov5-5.0.zip）到Colab。
