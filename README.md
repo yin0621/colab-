@@ -129,9 +129,42 @@ drive.mount('/content/drive')
 
 注意!!中間不能有空格
 
+開啟tensorboard再運行train.py程序
 
+![image](https://github.com/user-attachments/assets/0af1a1a7-8f1e-46b3-b121-4aa44909936d)
 
+啟動矩陣推理訓練
 
+![image](https://github.com/user-attachments/assets/7db23751-4aab-4e15-8d18-44bcf424d3f7)
 
+刷新tensorboard
 
+![image](https://github.com/user-attachments/assets/2d29518e-0cbe-4a4a-890f-ba3b8314c4e1)
 
+如果一開始tensorboard不顯示，是因為上傳的zip檔案裡面runs資料夾下train資料夾下沒有exp文件
+
+繼續在下面通過!python train.py --rect運行
+
+![image](https://github.com/user-attachments/assets/232a9fb0-3be0-4335-b202-633c97011db8)
+
+保存在exp8
+
+![image](https://github.com/user-attachments/assets/0a6af76b-8d3c-4764-8b0f-36b0cfde1685)
+
+tensorboard裡顯示loss的變化
+
+![image](https://github.com/user-attachments/assets/d524cb5b-cde8-4b28-b6af-244578660fdb)
+
+tensorboard資料：runs/train/exp/events.out.tfevents.1678366117.03e634abd4f1.7156.0
+
+超參數：hyp.yaml
+
+類別實例：labels.jpg 即每個類別出現的次數
+
+訓練結果：results.csv
+
+更改訓練的資料集
+
+![image](https://github.com/user-attachments/assets/c67db6e6-cc41-4c4c-b814-8c8cc3d5a847)
+
+把得到的best.pt下載下來在yolov5專案中，把detect.py 中main函數第一個參數weights對應的權重參數檔改成這個best.pt，就可以測試結果
